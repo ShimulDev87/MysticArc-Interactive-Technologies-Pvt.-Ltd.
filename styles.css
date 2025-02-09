@@ -15,9 +15,9 @@
 }
 
 .logo span {
-    font-size: 2rem;  /* Default font size for the text */
+    font-size: 1.8rem;  /* Default font size for the text */
     font-weight: bold;
-    color: #00ccff;  /* Default text color */
+    color: #6f00ff;  /* Default text color */
     line-height: 1.2;
 }
 
