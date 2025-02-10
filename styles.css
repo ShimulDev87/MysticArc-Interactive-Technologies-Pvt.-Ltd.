@@ -17,7 +17,7 @@
 .logo span {
     font-size: 1.8rem;  /* Default font size for the text */
     font-weight: bold;
-    color: #6f00ff;  /* Default text color */
+    color: #00f7ff;  /* Default text color */
     line-height: 1.2;
 }
 
@@ -231,17 +231,29 @@
     }
 }
 
-/* Optional: Carousel styling */
-.carousel-images {
-    display: flex;
-    transition: transform 1s ease-in-out;
+/* Optional: Carousel styling *//* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
 }
 
+/* Images stacked on top of each other */
 .carousel-item {
-    min-width: 100vw;
-    height: 70vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    opacity: 0;  /* Initially hidden */
+    transition: opacity 1s ease-in-out;
 }
+
+/* Active image - Visible */
+.carousel-item.active {
+    opacity: 1;
+}
+
 
 /* Hero Section */
 #home {

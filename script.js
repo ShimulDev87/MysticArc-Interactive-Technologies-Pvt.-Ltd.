@@ -26,3 +26,19 @@ function toggleMenu() {
     navLinks.classList.toggle('active');
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    let index = 0;
+    const images = document.querySelectorAll(".carousel-item");
+    const totalImages = images.length;
+
+    function showNextImage() {
+        images.forEach((img) => img.classList.remove("active")); // Hide all images
+        images[index].classList.add("active"); // Show current image
+
+        index = (index + 1) % totalImages; // Move to the next image
+    }
+
+    setInterval(showNextImage, 4000); // Change image every 4 seconds
+});
+
+
