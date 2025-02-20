@@ -345,6 +345,86 @@
 }
 
 
+.about-us {
+    position: relative;
+    padding: 40px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Watermark Effect */
+.watermark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    opacity: 0.1;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: watermark-fade 5s infinite alternate;
+}
+
+@keyframes watermark-fade {
+    0% { opacity: 0.1; }
+    100% { opacity: 0.3; }
+}
+
+/* Typing Effect */
+#about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 2px solid white;
+    animation: blink-cursor 0.7s infinite;
+}
+
+@keyframes blink-cursor {
+    50% { border-color: transparent; }
+}
+
+/* Language Switcher */
+.language-switcher {
+    margin-bottom: 20px;
+}
+
+.language-switcher button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ff4b2b;
+    color: white;
+    transition: 0.3s;
+}
+
+.language-switcher button:hover {
+    background: #ff416c;
+}
+#about-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.faded {
+    color: rgba(255, 255, 255, 0.3); /* Light color for preview text */
+    transition: color 0.2s ease-in-out;
+}
+
+.highlighted {
+    color: rgb(255, 174, 0) !important; /* Bright white when typing */
+    font-weight: bold;
+}
+
+
+
 
 /* General Styles */
 
@@ -813,6 +893,86 @@ nav ul li a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 320px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Floating and rotating effect */
+.portfolio-item:hover {
+    transform: rotateX(10deg) rotateY(10deg) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Glowing border effect */
+.portfolio-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 3px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.portfolio-item:hover::before {
+    opacity: 1;
+}
+
+/* Image effect */
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.6s ease;
+}
+
+/* 3D tilt effect */
+.portfolio-item:hover img {
+    transform: scale(1.1) rotateY(10deg);
+}
+
+/* Overlay effect */
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: bottom 0.5s ease;
+}
+
+.portfolio-item:hover .overlay {
+    bottom: 0;
 }
 
 
