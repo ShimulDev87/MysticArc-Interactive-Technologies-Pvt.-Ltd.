@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const aboutTexts = {
-    en: `At MysticArc Technologies, we blend spirituality and innovation to craft immersive gaming experiences and powerful engineering solutions.
+    en: `At MysticArc Interactive, we blend spirituality and innovation to craft immersive gaming experiences and powerful engineering solutions.
   
     With a team of passionate developers, designers, and visionaries, we turn ideas into reality. Our expertise spans across several domains, including Game Development, Game Publishing, and Digital Engineering.
   
@@ -80,7 +80,7 @@ const aboutTexts = {
   
     For us, game development is not just a business—it is a way to serve people and contribute to a better world while earning ethically and sustainably.`,
   
-    bn: `MysticArc Technologies-এ আমরা আধ্যাত্মিকতা এবং প্রযুক্তিকে একত্রিত করে অসাধারণ গেমিং অভিজ্ঞতা এবং শক্তিশালী প্রকৌশল সমাধান তৈরি করি।
+    bn: `MysticArc Interactive-এ আমরা আধ্যাত্মিকতা এবং প্রযুক্তিকে একত্রিত করে অসাধারণ গেমিং অভিজ্ঞতা এবং শক্তিশালী প্রকৌশল সমাধান তৈরি করি।
   
     আমাদের দক্ষ টিমের সদস্যরা তাদের সৃজনশীলতা ও দক্ষতাকে কাজে লাগিয়ে ধারণাকে বাস্তবে পরিণত করে। আমাদের বিশেষজ্ঞতা রয়েছে গেম ডেভেলপমেন্ট, গেম পাবলিশিং এবং ডিজিটাল ইঞ্জিনিয়ারিং-এ।
   
@@ -92,7 +92,7 @@ const aboutTexts = {
   
     আমাদের জন্য, গেম ডেভেলপমেন্ট শুধুমাত্র ব্যবসা নয়—এটি একটি সেবা, যা নৈতিকভাবে উপার্জন করে বিশ্বকে আরও ভালো করতে সাহায্য করে।`,
   
-    pt: `Na MysticArc Technologies, combinamos espiritualidade e inovação para criar experiências de jogos imersivas e soluções tecnológicas poderosas.
+    pt: `Na MysticArc Interactive, combinamos espiritualidade e inovação para criar experiências de jogos imersivas e soluções tecnológicas poderosas.
   
     Nossa equipe de desenvolvedores, designers e visionários transforma ideias em realidade. Nossa experiência abrange áreas como Desenvolvimento de Jogos, Publicação de Jogos e Engenharia Digital.
   
@@ -104,7 +104,7 @@ const aboutTexts = {
   
     Para nós, o desenvolvimento de jogos não é apenas um negócio—é uma forma de servir as pessoas e contribuir para um mundo melhor enquanto ganhamos de forma ética e sustentável.`,
   
-    es: `En MysticArc Technologies, combinamos espiritualidad e innovación para crear experiencias de juego inmersivas y soluciones de ingeniería poderosas.
+    es: `En MysticArc Interactive, combinamos espiritualidad e innovación para crear experiencias de juego inmersivas y soluciones de ingeniería poderosas.
   
     Con un equipo de desarrolladores, diseñadores y visionarios apasionados, convertimos ideas en realidad. Nuestra experiencia abarca múltiples áreas, incluyendo Desarrollo de Videojuegos, Publicación de Juegos e Ingeniería Digital.
   
