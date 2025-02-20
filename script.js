@@ -40,5 +40,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(showNextImage, 4000); // Change image every 4 seconds
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+    portfolioItems.forEach((item) => {
+        item.addEventListener("mouseover", () => {
+            item.classList.add("hovered");
+        });
+
+        item.addEventListener("mouseleave", () => {
+            item.classList.remove("hovered");
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+    portfolioItems.forEach((item) => {
+        item.addEventListener("mouseover", () => {
+            item.classList.add("hovered");
+        });
+
+        item.addEventListener("mouseleave", () => {
+            item.classList.remove("hovered");
+        });
+    });
+});
 
 
