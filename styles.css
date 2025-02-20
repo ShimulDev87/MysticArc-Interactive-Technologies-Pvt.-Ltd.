@@ -419,9 +419,70 @@
 }
 
 .highlighted {
-    color: rgb(255, 174, 0) !important; /* Bright white when typing */
+    color: rgb(255, 187, 0) !important; /* Bright white when typing */
     font-weight: bold;
 }
+
+
+.technologies {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #1c1c1c, #5a5a5ab2); /* Modern gradient */
+    color: rgb(255, 196, 0);
+    position: relative;
+}
+
+.tech-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.tech-item {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(64, 13, 158, 0.39);
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.tech-item h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.tech-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(236, 221, 3, 0.753);
+}
+
+.tech-item:hover img {
+    filter: grayscale(0%);
+    transform: rotate(360deg);
+}
+
+.tech-item:hover h3 {
+    opacity: 1;
+}
+
 
 
 
