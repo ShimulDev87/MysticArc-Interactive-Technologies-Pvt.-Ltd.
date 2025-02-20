@@ -427,7 +427,7 @@
 .technologies {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(120deg, #1c1c1c, #5a5a5ab2); /* Modern gradient */
+    background: linear-gradient(120deg, #747474b2, #2c2c2cb2); /* Modern gradient */
     color: rgb(255, 196, 0);
     position: relative;
 }
